@@ -10,3 +10,4 @@ public class BoilerplateApplication {
         SpringApplication.run(BoilerplateApplication.class, args);
     }
 }
+// https://www.lynda.com/Spring-tutorials/domain-model/510079/571070-4.html
