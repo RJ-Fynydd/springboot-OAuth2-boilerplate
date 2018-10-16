@@ -7,6 +7,7 @@ package com.nader1rm.boilerplate.Repo;
 
 import com.nader1rm.boilerplate.models.TourPackage;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 
 /**
  *
@@ -14,5 +15,5 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface TourPackageRepository extends CrudRepository<TourPackage, String> {
 
-    TourPackage findByName(String name);
+    TourPackage findByName(@Param("name")String name);
 }
