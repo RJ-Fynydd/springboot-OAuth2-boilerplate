@@ -8,11 +8,13 @@ package com.nader1rm.boilerplate.Repo;
 import com.nader1rm.boilerplate.models.TourPackage;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
  *
  * @author PotatoSauceVFX <rj@potatosaucevfx.com>
  */
+@RepositoryRestResource(collectionResourceRel = "packages", path = "packages")
 public interface TourPackageRepository extends CrudRepository<TourPackage, String> {
 
     TourPackage findByName(@Param("name")String name);
